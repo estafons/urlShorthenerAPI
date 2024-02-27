@@ -6,7 +6,12 @@ def create_app(settings_overrides=None):
     app = Flask(__name__)
     configure_settings(app, settings_overrides)
     configure_blueprints(app)
+    app.debug = True  # Enable debug mode
     return app
+    # app = Flask(__name__)
+    # configure_settings(app, settings_overrides)
+    # configure_blueprints(app)
+    # return app
 
 
 def configure_settings(app, settings_override):
