@@ -24,6 +24,7 @@ def getQueryParameters(params):
         if input parameters are not valid
 
     '''
+    print(password)
     if params.get('url'):
         url = params.get('url')
     else:
